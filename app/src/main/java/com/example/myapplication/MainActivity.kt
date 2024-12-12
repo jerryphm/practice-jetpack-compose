@@ -58,12 +58,11 @@ fun HomeScreen() {
         Column(
             modifier = Modifier.padding(paddingValues)
         ) {
-
+            Wallet()
+            Spacer(modifier = Modifier.height(16.dp))
+            // cards section
+            // finance section
+            // currency section
         }
-        // wallet section
-        Spacer(modifier = Modifier.height(16.dp))
-        // cards section
-        // finance section
-        // currency section
     }
 }
