@@ -34,10 +34,10 @@ fun Wallet(modifier: Modifier = Modifier) {
         verticalAlignment = Alignment.Top,
         modifier = modifier
             .fillMaxWidth()
-            .padding(16.dp)
+            .padding(horizontal = 16.dp)
     ) {
         Column {
-            Text(text = "Jerry Pham", style = MaterialTheme.typography.bodyLarge)
+            Text(text = "Account Balance", style = MaterialTheme.typography.titleLarge)
             Spacer(modifier = Modifier.height(8.dp))
             Text(text = "$ 64.590", style = MaterialTheme.typography.headlineMedium)
         }

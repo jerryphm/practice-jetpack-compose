@@ -30,14 +30,16 @@ fun BottomNavigationBar(modifier: Modifier = Modifier) {
             modifier = Modifier.background(MaterialTheme.colorScheme.primary)
         ) {
             listIcon.forEachIndexed() { index, item ->
+                val selected = index == 0
+
                 NavigationBarItem(
-                    selected = index == 0,
+                    selected = selected,
                     onClick = { /*TODO*/ },
                     icon = {
                         Icon(
                             imageVector = item.icon,
                             contentDescription = item.title,
-                            tint = MaterialTheme.colorScheme.inversePrimary
+                            tint = if (selected) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.inversePrimary
                         )
                     },
                     label = {

@@ -6,6 +6,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -20,6 +21,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.myapplication.data.Finance
 import com.example.myapplication.ui.theme.MyApplicationTheme
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
@@ -58,11 +60,13 @@ fun HomeScreen() {
         Column(
             modifier = Modifier.padding(paddingValues)
         ) {
-            Wallet()
             Spacer(modifier = Modifier.height(16.dp))
-            // cards section
-            // finance section
-            // currency section
+            Wallet()
+            Spacer(modifier = Modifier.height(12.dp))
+            Cards()
+            Spacer(modifier = Modifier.height(32.dp))
+            Finance()
+            Spacer(modifier = Modifier.height(32.dp))
         }
     }
 }
